@@ -1,0 +1,6 @@
+extends layout
+block content
+   script(type="text/javascript" src="/javascripts/add.js")
+   form(id='itemForm')
+      input(name='name' id='itemName' value='test')
+      input(type='submit' id="btnModify" value='提交' onclick="modifyItem()")

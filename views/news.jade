@@ -1,0 +1,82 @@
+extends layout
+
+block content
+    #top
+        .container.top
+            .logo
+                a(href="")
+                    img(src="/images/icon/logo.png")
+            ul(class="menu clear")
+                li
+                    a(href="relation")
+                        img(src="/images/icon/iconfont-answer.png")
+                        div 联系我们
+                li
+                    a(href="about")
+                        img(src="/images/icon/iconfont-friends.png")
+                        div 关于我们
+                li
+                    a(href="" class="active")
+                        img(src="/images/icon/iconfont-file2.png")
+                        div 公司新闻
+                li
+                    a(href="product1")
+                        img(src="/images/icon/iconfont-app.png")
+                        div 产品展示
+                li
+                    a(href="index" )
+                        img(src="/images/icon/iconfont-home.png")
+                        div 首页
+    div(style=" margin-top:70px")
+        img(src="http://7xiwm1.com1.z0.glb.clouddn.com/cfmy_newstop.jpg" style=" width:100%")
+
+    .container
+        .new-list
+            -for (var i = 0; i < datas.length; ++i) {
+                div
+                    h1 #{datas[i].name}
+                    .time #{datas[i].time}
+                    .article #{datas[i].context}
+
+            -}
+
+
+
+
+
+
+    .jumbotron(style=" background:#fafafa; padding:3em 0")
+        .container
+            .row.lxfs
+                .col-sm-4
+                    a(href="")
+                        img(src="images/icon/fk038.png")
+                    a(href="")
+                        img(src="http://7xiwm1.com1.z0.glb.clouddn.com/cfmy_ewm.png")
+                .col-sm-8
+                    .row
+                        .col-sm-12
+                            a(target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=1334486738&site=qq&menu=yes' title='QQ:1334486738')
+                                img(src="images/icon/fk040.png")
+                            a(target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=1270902371&site=qq&menu=yes' title='QQ:1270902371')
+                                img(src="images/icon/fk040.png")
+                        .col-sm-6
+                            a( href="")
+                                img(src="images/icon/fk042.png")
+                                span 023-65496756 4006-023-189
+                        .col-sm-6
+                            a( href="")
+                                img(src="images/icon/fk043.png")
+                                span @重庆川峰门业新浪微博
+                        .col-sm-6
+                            a( href="")
+                                img(src="images/icon/fk044.png")
+                                span @1512763623@qq.com
+                        .col-sm-6
+                            a( href="")
+                                img(src="images/icon/fk045.png")
+                                span @重庆川峰门业腾讯微博
+                        .col-sm-12
+                            a( href="")
+                                img(src="images/icon/fk046.png")
+                                span 重庆市 九龙坡区 含谷镇 崇兴村 水泥厂附近
